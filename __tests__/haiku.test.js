@@ -4,15 +4,13 @@ describe('Haiku', () => {
   let haiku;
 
 beforeEach(() => {
-  haiku = new Haiku(linesNum);
-});
+  haiku = new Haiku(3);
 });
 
-// test('should create three lines for haiku', () => {
-//   let haiku = lineNum;
-//   expect(haiku.lineNum).toEqual(3);
-//   });
-
+test('should create three lines for haiku', () => {
+  expect(haiku.lineNum).toEqual(3);
+  });
+});
 
 
 
