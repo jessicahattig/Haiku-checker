@@ -14,12 +14,19 @@ test('should correctly create 3 lines for a haiku ', () => {
   });
 });
 
-// test('should correctly have 7 syllabuls for first line, 5 syllabuls for second line and 7 syllabuls for third line', () => {
-//   expect(lineNum1.numberSyllables).toEqual(7);
-//   expect(lineNum2.numberSyllables).toEqual(5);
-//   expect(lineNum3.numberSyllables).toEqual(7);
-//   });
-// });
+describe('HaikuSyllabus', () => {
+  let haikuSyllabusCount;
+
+beforeEach(() => {
+  haikuSyllabusCount = new HaikuSyllabus(7, 5 ,7);
+});
+
+test('should correctly have 7 syllabuls for first line, 5 syllabuls for second line and 7 syllabuls for third line', () => {
+ expect(haikuSyllabusCount.syllablesCount1).toEqual(7);
+ expect(haikuSyllabusCount.syllablesCount2).toEqual(5);
+ expect(haikuSyllabusCount.syllablesCount3).toEqual(7);
+  });
+});
 
 //   var syllableCount = word.match(/[aeiouy]{1,2}/gi).length;
 

@@ -1,10 +1,19 @@
-// export default class Haiku {
-//   constructor(lineNum1, lineNum2, lineNum3) {
-//     this.lineNum1
-//     this.lineNum2
-//     this.lineNum3
-//   }
-// }
+export default class Haiku {
+  constructor(lineNum1, lineNum2, lineNum3) {
+    this.lineNum1 = lineNum1
+    this.lineNum2 = lineNum2
+    this.lineNum3 = lineNum3
+  }
+}
+export default class HaikuSyllabus {
+    constructor(syllabusCount1, syllabusCount2, syllabusCount3){
+      this.syllabusCount1 = syllabusCount1
+      this.syllabusCount2 = syllabusCount2
+      this.syllabusCount3 = syllabusCount3
+    }
+  }
+
+
 
 
 // export default class Triangle {
